@@ -111,7 +111,7 @@
 const TOPIC_REGISTRY = [
   "Python", "SQL", "Bayesian Statistics", "Machine Learning", 
   "Deep Learning", "Data Ethics", "Cloud Computing", "Visualization",
-  "Feature Engineering", "Natural Language Processing", "Big Data", "Linear Algebra"
+  "Feature Engineering", "Natural Language Processing", "Big Data", "Linear Algebra","GenAI",
 ];
 
 const CATEGORIES = {
@@ -143,7 +143,14 @@ const COURSES = [
    { 
     code: "ADSP 32009", name: "Data Science for Healthcare", semester: "Spring Year 2", cat: "elective",
     desc: `Given the breadth of the field of health analytics, this course will provide an overview of the development and rapid expansion of analytics in healthcare, major and emerging topical areas, and current issues related to research methods to improve human health. We will cover such topics as security concerns unique to the field, research design strategies, and the integration of epidemiologic and quality improvement methodologies to operationalize data for continuous improvement. Students will be introduced to the application of predictive analytics to healthcare. Students will understand factors impacting the delivery of quality and safe patient care and the application of data-driven methods to improve care at the healthcare system level, design approaches to answering a research question at the population level, become familiar with the application of data analytics to impacting care at the provider level through Clinical Decision Systems, and understand the process of a Clinical Trail.`,
-    topics: ["Machine Learning", "Python", "Deep Learning"]
+    topics: ["Machine Learning", "Python", "Deep Learning"],
+    prereqs: ["ADSP 31008","ADSP 31017"]
+  },
+  { 
+    code: "ADSP 32014", name: "Bayesian Machine Learning with Generative AI Applications", semester: "Spring Year 2", cat: "elective",
+    desc: `This course provides a strong theoretical and practical skillset for probabilistic machine learning applications. Bayesian inference and modeling methods are important for several areas including prediction, decision making, and risk assessment where modeling the uncertainty is needed. The course begins with an introduction to Bayesian statistical analysis, covering the foundations of Bayesian inference and the application of Bayes' theorem for statistical inference. We then introduce Bayesian networks, which offer a powerful graphical tool for modeling complex systems and making probabilistic inferences. The course then advances to cover more sophisticated topics such as Markov Chain Monte Carlo (MCMC) methods for sampling from complex probability distributions, hierarchical models, and model selection techniques. The final three weeks are dedicated to cutting-edge methodologies like Generative Deep Learning, Variational Autoencoders, and Bayesian Neural Networks, all rooted in Bayesian Machine Learning. Upon completion, students will be equipped to apply Bayesian methods to a wide range of real-world problems in fields such as engineering, business, finance, and public policy, addressing challenges like missing data or training AI models that are able to say 'I don't know'.`,
+    topics: ["Bayesian Statistics", "Machine Learning", "GenAI"],
+    prereqs: []
   }
 ];
 
