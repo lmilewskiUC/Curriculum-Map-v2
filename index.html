@@ -111,7 +111,7 @@
 const TOPIC_REGISTRY = [
   "Python", "SQL", "Bayesian Statistics", "Machine Learning", 
   "Deep Learning", "Data Ethics", "Cloud Computing", "Visualization",
-  "Feature Engineering", "Natural Language Processing", "Big Data", "Linear Algebra","GenAI",
+  "Feature Engineering", "Natural Language Processing", "Big Data", "Linear Algebra","GenAI","Computer Vision",
 ];
 
 const CATEGORIES = {
@@ -169,6 +169,12 @@ const COURSES = [
     desc: `The objective of this course is two-folds - first, to understand what Machine Learning Operations (MLOps) is and why it is a key component in enterprise production deployment of machine learning projects. Second, to expose students to software engineering, model engineering and state-of-the-art deployment engineering with hands-on platform and tools experience. This course crosses the chasm that separates machine learning projects/experiments and enterprise production deployment. It covers 3 pillars in MLOps: software engineering such as software architecture, Continuous Integration/Continuous Delivery and data versioning; model engineering such as AutoML and A/B experimentation; and deployment engineering such as docker containers and model monitoring. The course focuses on best practices in the industry that are critical to enterprise production deployment of machine learning projects. Having completed this course, a student understands the machine learning lifecycle and what it takes to go from ideation to operationalization in an enterprise environment. Furthermore, students get exposure to state-of-the-art MLOps platforms such as allegro (https://allegro.ai/), xpresso https://abzooba.com/xpresso-ai), Dataiku (https://www.dataiku.com/), LityxIQ (https://lityx.com/), DataRobot (https://www.datarobot.com/), AWS Sagemaker (https://aws.amazon.com/sagemaker/), and technologies such as gitHub, Jenkins, slack, docker, and kubernetes.`,
     topics: ["Machine Learning"],
     prereqs: [["ADSP 31008", "ADSP 31017"], ["ADSP 31012", "ADSP 31013"]]
+  },
+  { 
+    code: "ADSP 32023", name: "Advanced Computer Vision with Deep Learning", semester: "Spring Year 2", cat: "elective",
+    desc: `Computer vision is the field of computer science that focuses on creating digital systems that can process, analyze, and make sense of visual data in the same way that humans do. Deep learning is a subset of machine learning and a branch of Artificial Intelligence (AI). It involves the training, deployment, and application of large complex neural network architectures to solve cutting-edge problems. Deep Learning has become the primary approach for solving cognitive problems such as Computer Vision and Natural Language Processing (NLP) and has had a massive impact on various industries such as healthcare, retail, automotive, industrial automation, and agriculture. This course will enable students to build Deep Learning models and apply them to computer vision tasks such as object recognition, detection, and segmentation. Students will gain an in-depth understanding of the Deep Learning model development process, tools, and frameworks. Although the focus of the course will primarily be computer vision, students will work on both image and nonimage datasets during class exercises and assignments. Students will gain hands-on experience in popular libraries such as Tensorflow, Keras, and PyTorch. Students will also learn to apply state of the art models such as ResNet, EfficientNet, RCNNs, YOLO, Vision Transformers, etc. for computer vision and work on datasets such as CIFAR, ImageNet, MS COCO, and MPII Human Poses.`,
+    topics: ["Computer Vision", "Deep Learning"],
+    prereqs: ["ADSP 31008", "ADSP 31017"]
   }
 ];
 
