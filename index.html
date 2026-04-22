@@ -161,14 +161,14 @@ const COURSES = [
   { 
     code: "ADSP 32020", name: "Deep Reinforcement Learning", semester: "Spring Year 2", cat: "elective",
     desc: `Extracting actionable insights from unstructured text and designing cognitive applications remains crucial to applied data science. Students in this course will learn the foundations of natural language processing, including text preprocessing techniques such as text normalization, lemmatization, stemming, and regex. The course will cover supervised learning methods like text classification using n-grams, TF-IDF vectorization, and sentiment analysis, as well as unsupervised approaches like topic modeling (LDA, NMF, BERTopic) and paraphrase mining. Neural network-based NLP techniques will be introduced, covering distributional similarity, word embeddings (Word2Vec, FastText, GloVe), and deep learning architectures, including CNNs, LSTMs, GRUs, and transformer-based models such as BERT and ModernBERT. Students will explore question-answering systems, integrating extractive methods (SQuAD) and generative techniques (T5, BART). Advanced topics will include instruction-tuned large language models (ChatGPT, DeepSeek), reinforcement learning (RLHF, PPO), retrieval-augmented generation, and agentic AI. The course will provide hands-on experience in Python-based text analysis and practical applications using modern NLP frameworks, including transformer-based models and retrieval systems.`,
-    topics: ["Natural Langauge Processing"],
+    topics: ["Natural Language Processing"],
     prereqs: []
   },
   { 
     code: "ADSP 32021", name: "Machine Learning Operations", semester: "Spring Year 2", cat: "elective",
     desc: `The objective of this course is two-folds - first, to understand what Machine Learning Operations (MLOps) is and why it is a key component in enterprise production deployment of machine learning projects. Second, to expose students to software engineering, model engineering and state-of-the-art deployment engineering with hands-on platform and tools experience. This course crosses the chasm that separates machine learning projects/experiments and enterprise production deployment. It covers 3 pillars in MLOps: software engineering such as software architecture, Continuous Integration/Continuous Delivery and data versioning; model engineering such as AutoML and A/B experimentation; and deployment engineering such as docker containers and model monitoring. The course focuses on best practices in the industry that are critical to enterprise production deployment of machine learning projects. Having completed this course, a student understands the machine learning lifecycle and what it takes to go from ideation to operationalization in an enterprise environment. Furthermore, students get exposure to state-of-the-art MLOps platforms such as allegro (https://allegro.ai/), xpresso https://abzooba.com/xpresso-ai), Dataiku (https://www.dataiku.com/), LityxIQ (https://lityx.com/), DataRobot (https://www.datarobot.com/), AWS Sagemaker (https://aws.amazon.com/sagemaker/), and technologies such as gitHub, Jenkins, slack, docker, and kubernetes.`,
     topics: ["Machine Learning"],
-    prereqs: ["ADSP 31008 or ADSP 31017","ADSP 31012 or ADSP 31013"]
+    prereqs: [["ADSP 31008", "ADSP 31017"], ["ADSP 31012", "ADSP 31013"]]
   }
 ];
 
