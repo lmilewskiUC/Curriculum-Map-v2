@@ -112,7 +112,8 @@ const TOPIC_REGISTRY = [
   "Python", "SQL", "Bayesian Statistics", "Machine Learning", 
   "Deep Learning", "Data Ethics", "Cloud Computing", "Visualization",
   "Feature Engineering", "Natural Language Processing", "Big Data", 
-  "Linear Algebra","GenAI","Computer Vision", "LLMs"
+  "Linear Algebra","GenAI","Computer Vision", "LLMs", "Business Analytics", 
+  "Career"
 ];
 
 const CATEGORIES = {
@@ -132,7 +133,7 @@ const COURSES = [
   { 
     code: "ADSP 31013", name: "Big Data Platforms & Cloud Computing", semester: "Spring Year 1", cat: "core",
     desc: `This course teaches students how to approach Big Data and large-scale machine learning applications. While there is no single definition of Big Data and multiple emerging software packages exist to work with Big Data, we will cover the most popular approaches. Students will learn the Big Data infrastructure, including Linux, Massive parallelization and Distributed Computing, and how to apply both Hadoop and Spark map-reduce concepts for clustering, similarity search, web analytics and classification. During the course, we will cover the applications of NoSQL systems, such as JSON stores, object storage and Elasticsearch. The cloud computing section of the course will focus on virtualization and container orchestration, including virtual machines, dockers and Kubernetes. During the course students will gain hands-on expertise leveraging Hive, Pig, Python and PySpark for Big Data applications in client-server environment. For MScA students in the 12-course curriculum who wish to take Big Data Platforms as a core course, instead of MSCA 31012 Data Engineering Platforms: Certain technical skills and knowledge are required to be successful in this course. Required skills may be found for MSCA 31013 Big Data Platforms at https://professional.uchicago.edu/find-your-fit/masters/master-science-analytics/curriculum. Contact the program administration for further details.`,
-    topics: ["Python", "SQL", "Feature Engineering"],
+    topics: ["Python", "Big Data","Machine Learning," "Cloud Computing"],
     prereqs: []
   },
   { 
@@ -142,64 +143,82 @@ const COURSES = [
     prereqs: ["ADSP 31008","ADSP 31017"]
   },
    { 
-    code: "ADSP 32009", name: "Data Science for Healthcare", semester: "Spring Year 2", cat: "elective",
+    code: "ADSP 32009", name: "Data Science for Healthcare", semester: "Spring Year 1", cat: "elective",
     desc: `Given the breadth of the field of health analytics, this course will provide an overview of the development and rapid expansion of analytics in healthcare, major and emerging topical areas, and current issues related to research methods to improve human health. We will cover such topics as security concerns unique to the field, research design strategies, and the integration of epidemiologic and quality improvement methodologies to operationalize data for continuous improvement. Students will be introduced to the application of predictive analytics to healthcare. Students will understand factors impacting the delivery of quality and safe patient care and the application of data-driven methods to improve care at the healthcare system level, design approaches to answering a research question at the population level, become familiar with the application of data analytics to impacting care at the provider level through Clinical Decision Systems, and understand the process of a Clinical Trail.`,
     topics: ["Machine Learning", "Python", "Deep Learning"],
     prereqs: ["ADSP 31008","ADSP 31017"]
   },
   { 
-    code: "ADSP 32014", name: "Bayesian Machine Learning with Generative AI Applications", semester: "Spring Year 2", cat: "elective",
+    code: "ADSP 32014", name: "Bayesian Machine Learning with Generative AI Applications", semester: "Spring Year 1", cat: "elective",
     desc: `This course provides a strong theoretical and practical skillset for probabilistic machine learning applications. Bayesian inference and modeling methods are important for several areas including prediction, decision making, and risk assessment where modeling the uncertainty is needed. The course begins with an introduction to Bayesian statistical analysis, covering the foundations of Bayesian inference and the application of Bayes' theorem for statistical inference. We then introduce Bayesian networks, which offer a powerful graphical tool for modeling complex systems and making probabilistic inferences. The course then advances to cover more sophisticated topics such as Markov Chain Monte Carlo (MCMC) methods for sampling from complex probability distributions, hierarchical models, and model selection techniques. The final three weeks are dedicated to cutting-edge methodologies like Generative Deep Learning, Variational Autoencoders, and Bayesian Neural Networks, all rooted in Bayesian Machine Learning. Upon completion, students will be equipped to apply Bayesian methods to a wide range of real-world problems in fields such as engineering, business, finance, and public policy, addressing challenges like missing data or training AI models that are able to say 'I don't know'.`,
     topics: ["Bayesian Statistics", "Machine Learning", "GenAI"],
     prereqs: []
   },
   { 
-    code: "ADSP 32018", name: `Next-Gen NLP: LLM and AgenticAI in Practice`, semester: "Spring Year 2", cat: "elective",
+    code: "ADSP 32018", name: `Next-Gen NLP: LLM and AgenticAI in Practice`, semester: "Spring Year 1", cat: "elective",
     desc: `Extracting actionable insights from unstructured text and designing cognitive applications remains crucial to applied data science. Students in this course will learn the foundations of natural language processing, including text preprocessing techniques such as text normalization, lemmatization, stemming, and regex. The course will cover supervised learning methods like text classification using n-grams, TF-IDF vectorization, and sentiment analysis, as well as unsupervised approaches like topic modeling (LDA, NMF, BERTopic) and paraphrase mining. Neural network-based NLP techniques will be introduced, covering distributional similarity, word embeddings (Word2Vec, FastText, GloVe), and deep learning architectures, including CNNs, LSTMs, GRUs, and transformer-based models such as BERT and ModernBERT. Students will explore question-answering systems, integrating extractive methods (SQuAD) and generative techniques (T5, BART). Advanced topics will include instruction-tuned large language models (ChatGPT, DeepSeek), reinforcement learning (RLHF, PPO), retrieval-augmented generation, and agentic AI. The course will provide hands-on experience in Python-based text analysis and practical applications using modern NLP frameworks, including transformer-based models and retrieval systems.`,
     topics: ["GenAI", "Natural Language Processing"],
     prereqs: []
   },
   { 
-    code: "ADSP 32020", name: "Deep Reinforcement Learning", semester: "Spring Year 2", cat: "elective",
+    code: "ADSP 32020", name: "Deep Reinforcement Learning", semester: "Spring Year 1", cat: "elective",
     desc: `Extracting actionable insights from unstructured text and designing cognitive applications remains crucial to applied data science. Students in this course will learn the foundations of natural language processing, including text preprocessing techniques such as text normalization, lemmatization, stemming, and regex. The course will cover supervised learning methods like text classification using n-grams, TF-IDF vectorization, and sentiment analysis, as well as unsupervised approaches like topic modeling (LDA, NMF, BERTopic) and paraphrase mining. Neural network-based NLP techniques will be introduced, covering distributional similarity, word embeddings (Word2Vec, FastText, GloVe), and deep learning architectures, including CNNs, LSTMs, GRUs, and transformer-based models such as BERT and ModernBERT. Students will explore question-answering systems, integrating extractive methods (SQuAD) and generative techniques (T5, BART). Advanced topics will include instruction-tuned large language models (ChatGPT, DeepSeek), reinforcement learning (RLHF, PPO), retrieval-augmented generation, and agentic AI. The course will provide hands-on experience in Python-based text analysis and practical applications using modern NLP frameworks, including transformer-based models and retrieval systems.`,
     topics: ["Natural Language Processing"],
     prereqs: []
   },
   { 
-    code: "ADSP 32021", name: "Machine Learning Operations", semester: "Spring Year 2", cat: "elective",
+    code: "ADSP 32021", name: "Machine Learning Operations", semester: "Spring Year 1", cat: "elective",
     desc: `The objective of this course is two-folds - first, to understand what Machine Learning Operations (MLOps) is and why it is a key component in enterprise production deployment of machine learning projects. Second, to expose students to software engineering, model engineering and state-of-the-art deployment engineering with hands-on platform and tools experience. This course crosses the chasm that separates machine learning projects/experiments and enterprise production deployment. It covers 3 pillars in MLOps: software engineering such as software architecture, Continuous Integration/Continuous Delivery and data versioning; model engineering such as AutoML and A/B experimentation; and deployment engineering such as docker containers and model monitoring. The course focuses on best practices in the industry that are critical to enterprise production deployment of machine learning projects. Having completed this course, a student understands the machine learning lifecycle and what it takes to go from ideation to operationalization in an enterprise environment. Furthermore, students get exposure to state-of-the-art MLOps platforms such as allegro (https://allegro.ai/), xpresso https://abzooba.com/xpresso-ai), Dataiku (https://www.dataiku.com/), LityxIQ (https://lityx.com/), DataRobot (https://www.datarobot.com/), AWS Sagemaker (https://aws.amazon.com/sagemaker/), and technologies such as gitHub, Jenkins, slack, docker, and kubernetes.`,
     topics: ["Machine Learning"],
     prereqs: [["ADSP 31008", "ADSP 31017"], ["ADSP 31012", "ADSP 31013"]]
   },
   { 
-    code: "ADSP 32023", name: "Advanced Computer Vision with Deep Learning", semester: "Spring Year 2", cat: "elective",
+    code: "ADSP 32023", name: "Advanced Computer Vision with Deep Learning", semester: "Spring Year 1", cat: "elective",
     desc: `Computer vision is the field of computer science that focuses on creating digital systems that can process, analyze, and make sense of visual data in the same way that humans do. Deep learning is a subset of machine learning and a branch of Artificial Intelligence (AI). It involves the training, deployment, and application of large complex neural network architectures to solve cutting-edge problems. Deep Learning has become the primary approach for solving cognitive problems such as Computer Vision and Natural Language Processing (NLP) and has had a massive impact on various industries such as healthcare, retail, automotive, industrial automation, and agriculture. This course will enable students to build Deep Learning models and apply them to computer vision tasks such as object recognition, detection, and segmentation. Students will gain an in-depth understanding of the Deep Learning model development process, tools, and frameworks. Although the focus of the course will primarily be computer vision, students will work on both image and nonimage datasets during class exercises and assignments. Students will gain hands-on experience in popular libraries such as Tensorflow, Keras, and PyTorch. Students will also learn to apply state of the art models such as ResNet, EfficientNet, RCNNs, YOLO, Vision Transformers, etc. for computer vision and work on datasets such as CIFAR, ImageNet, MS COCO, and MPII Human Poses.`,
     topics: ["Computer Vision", "Deep Learning"],
     prereqs: ["ADSP 31008", "ADSP 31017"]
   },
   { 
-    code: "ADSP 32026", name: "Python for ML Engineering", semester: "Spring Year 2", cat: "elective",
+    code: "ADSP 32026", name: "Python for ML Engineering", semester: "Spring Year 1", cat: "elective",
     desc: `This course prepares data science students to go beyond programming constructs and data science libraries. This courses provides an understanding of web applications so students can get a deeper understand of how their models are deployed. They are taught python environment management, required for production work. They are taught advanced data structures such as trees and graphs to allow them to work with more complex modes and more advanced control structures, such as generators a recursive functions to help them write more expressive code.`,
     topics: ["Python", "Machine Learning"],
     prereqs: []
   },
   { 
-    code: "ADSP 32027", name: "Generative AI I: Principles & Applications", semester: "Spring Year 2", cat: "elective",
+    code: "ADSP 32027", name: "Generative AI I: Principles & Applications", semester: "Spring Year 1", cat: "elective",
     desc: `This course dives into the realm of Generative AI, offering a comprehensive look into the world of Large Language Models (LLMs), image generation techniques, and the fusion of vision and text through multimodal models. Drawing from core concepts in neural networks, transformers, and advanced techniques such as prompt engineering, vision prompting, and multimodality representation, students will explore the capabilities, applications, and ethical considerations of generative models. This course culminates in hands-on projects, allowing participants to apply theory to practical scenarios.`,
     topics: ["GenAI", "LLMs"],
     prereqs: ["ADSP 31009", "ADSP 31017"]
   },
   { 
-    code: "ADSP 32029", name: "Causal Models for Data Science", semester: "Spring Year 2", cat: "elective",
+    code: "ADSP 32029", name: "Causal Models for Data Science", semester: "Spring Year 1", cat: "elective",
     desc: `This course is designed to equip students with the knowledge and skills to perform causal inference with machine learning. Students learn practical skills for designing and analyzing experiments. The course begins with a quick overview of the basics of correlational and cross-sectional analytical techniques. It then introduces the importance of randomization in explainability and causal inference. The issues of bias in observational studies are examined. Students use AI/ML models to quantify randomization errors and correct violations of non-randomization. Finally, counterfactuals for individual predictions are examined.`,
     topics: ["Machine Learning"],
     prereqs: ["ADSP 31014","ADSP 31017"]
   },
   { 
     code: "ADSP 34002", name: "Capstone I", semester: "Spring Year 1", cat: "capstone",
-    desc: ``,
-    topics: ["", "", ""],
-    prereqs: [""]
+    desc: `The overarching goal of this course is to take students two steps closer to being "Complete Data Scientists". The first step is by letting students manage and solve a real data science project with real clients and real problems. Students will complete the design of their Capstone Projects, and begin the implementation. The second step is by exposing them to data science methodologies in the absence of pre-existing data - by exposing them to quantitative methodologies in optimally designing data collection tasks. This course covers the Business analytic process from the translation of business problems and opportunities into questions that can be addressed by using data science, development of analytical plans including methodologies and data to address these issues, and initial implementation of these analytical plan.`,
+    topics: ["Data Ethics", "Business Analytics"],
+    prereqs: []
+  },
+  { 
+    code: "ADSP 37025", name: "MS in Applied Data Science Career Seminar I", semester: "Autumn Year 1", cat: "Seminar",
+    desc: `This course will help you navigate your career in data science and land a job that fits your needs and desires. It will lead you through a deeper discovery into who you are, clarifying what you want to do with your career, and navigating the market to find the right company and job match. This noncredit, 4 course sequence is required for all students. Students with extensive work experience, may be eligible to waive this course.`,
+    topics: ["Career"],
+    prereqs: []
+  },
+  { 
+    code: "ADSP 37026", name: "MS in Applied Data Science Career Seminar II", semester: "Winter Year 1", cat: "Seminar",
+    desc: `This course will help you navigate your career in data science and land a job that fits your needs and desires. It will lead you through a deeper discovery into who you are, clarifying what you want to do with your career, and navigating the market to find the right company and job match. This noncredit, 4 course sequence is required for all students. Students with extensive work experience, may be eligible to waive this course.`,
+    topics: ["Career"],
+    prereqs: ["ADSP 37025"]
+  },
+  { 
+    code: "ADSP 37027", name: "MS in Applied Data Science Career Seminar III", semester: "Spring Year 1", cat: "Seminar",
+    desc: `This course will help you navigate your career in data science and land a job that fits your needs and desires. It will lead you through a deeper discovery into who you are, clarifying what you want to do with your career, and navigating the market to find the right company and job match. This noncredit, 4 course sequence is required for all students. Students with extensive work experience, may be eligible to waive this course.`,
+    topics: ["Career"],
+    prereqs: ["ADSP 37026"]
   }
 ];
 
