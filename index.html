@@ -111,7 +111,8 @@
 const TOPIC_REGISTRY = [
   "Python", "SQL", "Bayesian Statistics", "Machine Learning", 
   "Deep Learning", "Data Ethics", "Cloud Computing", "Visualization",
-  "Feature Engineering", "Natural Language Processing", "Big Data", "Linear Algebra","GenAI","Computer Vision",
+  "Feature Engineering", "Natural Language Processing", "Big Data", 
+  "Linear Algebra","GenAI","Computer Vision", "LLMs"
 ];
 
 const CATEGORIES = {
@@ -175,6 +176,30 @@ const COURSES = [
     desc: `Computer vision is the field of computer science that focuses on creating digital systems that can process, analyze, and make sense of visual data in the same way that humans do. Deep learning is a subset of machine learning and a branch of Artificial Intelligence (AI). It involves the training, deployment, and application of large complex neural network architectures to solve cutting-edge problems. Deep Learning has become the primary approach for solving cognitive problems such as Computer Vision and Natural Language Processing (NLP) and has had a massive impact on various industries such as healthcare, retail, automotive, industrial automation, and agriculture. This course will enable students to build Deep Learning models and apply them to computer vision tasks such as object recognition, detection, and segmentation. Students will gain an in-depth understanding of the Deep Learning model development process, tools, and frameworks. Although the focus of the course will primarily be computer vision, students will work on both image and nonimage datasets during class exercises and assignments. Students will gain hands-on experience in popular libraries such as Tensorflow, Keras, and PyTorch. Students will also learn to apply state of the art models such as ResNet, EfficientNet, RCNNs, YOLO, Vision Transformers, etc. for computer vision and work on datasets such as CIFAR, ImageNet, MS COCO, and MPII Human Poses.`,
     topics: ["Computer Vision", "Deep Learning"],
     prereqs: ["ADSP 31008", "ADSP 31017"]
+  },
+  { 
+    code: "ADSP 32026", name: "Python for ML Engineering", semester: "Spring Year 2", cat: "elective",
+    desc: `This course prepares data science students to go beyond programming constructs and data science libraries. This courses provides an understanding of web applications so students can get a deeper understand of how their models are deployed. They are taught python environment management, required for production work. They are taught advanced data structures such as trees and graphs to allow them to work with more complex modes and more advanced control structures, such as generators a recursive functions to help them write more expressive code.`,
+    topics: ["Python", "Machine Learning"],
+    prereqs: []
+  },
+  { 
+    code: "ADSP 32027", name: "Generative AI I: Principles & Applications", semester: "Spring Year 2", cat: "elective",
+    desc: `This course dives into the realm of Generative AI, offering a comprehensive look into the world of Large Language Models (LLMs), image generation techniques, and the fusion of vision and text through multimodal models. Drawing from core concepts in neural networks, transformers, and advanced techniques such as prompt engineering, vision prompting, and multimodality representation, students will explore the capabilities, applications, and ethical considerations of generative models. This course culminates in hands-on projects, allowing participants to apply theory to practical scenarios.`,
+    topics: ["GenAI", "LLMs"],
+    prereqs: ["ADSP 31009", "ADSP 31017"]
+  },
+  { 
+    code: "ADSP 32029", name: "Causal Models for Data Science", semester: "Spring Year 2", cat: "elective",
+    desc: `This course is designed to equip students with the knowledge and skills to perform causal inference with machine learning. Students learn practical skills for designing and analyzing experiments. The course begins with a quick overview of the basics of correlational and cross-sectional analytical techniques. It then introduces the importance of randomization in explainability and causal inference. The issues of bias in observational studies are examined. Students use AI/ML models to quantify randomization errors and correct violations of non-randomization. Finally, counterfactuals for individual predictions are examined.`,
+    topics: ["Machine Learning"],
+    prereqs: ["ADSP 31014","ADSP 31017"]
+  },
+  { 
+    code: "ADSP 34002", name: "Capstone I", semester: "Spring Year 1", cat: "capstone",
+    desc: ``,
+    topics: ["", "", ""],
+    prereqs: [""]
   }
 ];
 
