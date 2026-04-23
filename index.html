@@ -133,7 +133,7 @@ const COURSES = [
   { 
     code: "ADSP 31013", name: "Big Data Platforms & Cloud Computing", semester: "Spring Year 1", cat: "core",
     desc: `This course teaches students how to approach Big Data and large-scale machine learning applications. While there is no single definition of Big Data and multiple emerging software packages exist to work with Big Data, we will cover the most popular approaches. Students will learn the Big Data infrastructure, including Linux, Massive parallelization and Distributed Computing, and how to apply both Hadoop and Spark map-reduce concepts for clustering, similarity search, web analytics and classification. During the course, we will cover the applications of NoSQL systems, such as JSON stores, object storage and Elasticsearch. The cloud computing section of the course will focus on virtualization and container orchestration, including virtual machines, dockers and Kubernetes. During the course students will gain hands-on expertise leveraging Hive, Pig, Python and PySpark for Big Data applications in client-server environment. For MScA students in the 12-course curriculum who wish to take Big Data Platforms as a core course, instead of MSCA 31012 Data Engineering Platforms: Certain technical skills and knowledge are required to be successful in this course. Required skills may be found for MSCA 31013 Big Data Platforms at https://professional.uchicago.edu/find-your-fit/masters/master-science-analytics/curriculum. Contact the program administration for further details.`,
-    topics: ["Python", "Big Data","Machine Learning," "Cloud Computing"],
+    topics: ["Python", "Big Data","Machine Learning", "Cloud Computing"],
     prereqs: []
   },
   { 
@@ -170,7 +170,7 @@ const COURSES = [
     code: "ADSP 32021", name: "Machine Learning Operations", semester: "Spring Year 1", cat: "elective",
     desc: `The objective of this course is two-folds - first, to understand what Machine Learning Operations (MLOps) is and why it is a key component in enterprise production deployment of machine learning projects. Second, to expose students to software engineering, model engineering and state-of-the-art deployment engineering with hands-on platform and tools experience. This course crosses the chasm that separates machine learning projects/experiments and enterprise production deployment. It covers 3 pillars in MLOps: software engineering such as software architecture, Continuous Integration/Continuous Delivery and data versioning; model engineering such as AutoML and A/B experimentation; and deployment engineering such as docker containers and model monitoring. The course focuses on best practices in the industry that are critical to enterprise production deployment of machine learning projects. Having completed this course, a student understands the machine learning lifecycle and what it takes to go from ideation to operationalization in an enterprise environment. Furthermore, students get exposure to state-of-the-art MLOps platforms such as allegro (https://allegro.ai/), xpresso https://abzooba.com/xpresso-ai), Dataiku (https://www.dataiku.com/), LityxIQ (https://lityx.com/), DataRobot (https://www.datarobot.com/), AWS Sagemaker (https://aws.amazon.com/sagemaker/), and technologies such as gitHub, Jenkins, slack, docker, and kubernetes.`,
     topics: ["Machine Learning"],
-    prereqs: [["ADSP 31008", "ADSP 31017"], ["ADSP 31012", "ADSP 31013"]]
+    prereqs: ["ADSP 31008", "ADSP 31017"], ["ADSP 31012", "ADSP 31013"]]
   },
   { 
     code: "ADSP 32023", name: "Advanced Computer Vision with Deep Learning", semester: "Spring Year 1", cat: "elective",
@@ -203,19 +203,19 @@ const COURSES = [
     prereqs: []
   },
   { 
-    code: "ADSP 37025", name: "MS in Applied Data Science Career Seminar I", semester: "Autumn Year 1", cat: "Seminar",
+    code: "ADSP 37025", name: "MS in Applied Data Science Career Seminar I", semester: "Autumn Year 1", cat: "seminar",
     desc: `This course will help you navigate your career in data science and land a job that fits your needs and desires. It will lead you through a deeper discovery into who you are, clarifying what you want to do with your career, and navigating the market to find the right company and job match. This noncredit, 4 course sequence is required for all students. Students with extensive work experience, may be eligible to waive this course.`,
     topics: ["Career"],
     prereqs: []
   },
   { 
-    code: "ADSP 37026", name: "MS in Applied Data Science Career Seminar II", semester: "Winter Year 1", cat: "Seminar",
+    code: "ADSP 37026", name: "MS in Applied Data Science Career Seminar II", semester: "Winter Year 1", cat: "seminar",
     desc: `This course will help you navigate your career in data science and land a job that fits your needs and desires. It will lead you through a deeper discovery into who you are, clarifying what you want to do with your career, and navigating the market to find the right company and job match. This noncredit, 4 course sequence is required for all students. Students with extensive work experience, may be eligible to waive this course.`,
     topics: ["Career"],
     prereqs: ["ADSP 37025"]
   },
   { 
-    code: "ADSP 37027", name: "MS in Applied Data Science Career Seminar III", semester: "Spring Year 1", cat: "Seminar",
+    code: "ADSP 37027", name: "MS in Applied Data Science Career Seminar III", semester: "Spring Year 1", cat: "seminar",
     desc: `This course will help you navigate your career in data science and land a job that fits your needs and desires. It will lead you through a deeper discovery into who you are, clarifying what you want to do with your career, and navigating the market to find the right company and job match. This noncredit, 4 course sequence is required for all students. Students with extensive work experience, may be eligible to waive this course.`,
     topics: ["Career"],
     prereqs: ["ADSP 37026"]
