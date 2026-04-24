@@ -154,6 +154,18 @@ const COURSES = [
     prereqs: ["ADSP 31008","ADSP 31017"]
   },
    { 
+    code: "ADSP 32001", name: `Quantitative Finance: Methods and Applications`, semester: "Winter Year 1", cat: "elective",
+    desc: `This course provides students with an introduction to quantitative finance, covering financial institutions, markets, instruments, and core investment concepts. Students will learn to apply quantitative finance and data science techniques to develop and evaluate investment strategies using real-world financial data. The course delves into well-established methods from academia and industry, applying traditional statistical and machine learning approaches, along with optimization techniques, to signal construction and quantitative investing.`,
+    topics: [],
+    prereqs: ["ADSP 31007", "ADSP 31014"]
+  },
+  { 
+    code: "ADSP 32007", name: "Data Visualization Techniques", semester: "Winter Year 1", cat: "elective",
+    desc: `In today's data driven enterprise, data storytelling using effective visualization strategies is an essential skill for analytics practitioners in almost every field to explore and present data. This course focuses on modern data visualization technologies, tools, and techniques to convert raw data into actionable information. Modern data visualization tools are at the forefront of the "self-service analytics" architectures which are decentralizing analytics and breaking down IT bottlenecks for business experts. Moreover, with its foundations rooted in statistics, psychology, and computer science, data visualization shows you how to better understand the data, present clear evidence of your findings to your intended audience and tell engaging data stories through charts and graphics. This course is designed to introduce data visualization as a medium of effective communication using strategic storytelling, and the basis for interactive information dashboards.`,
+    topics: [],
+    prereqs: []
+  },
+  { 
     code: "ADSP 32009", name: "Data Science for Healthcare", semester: "Spring Year 1", cat: "elective",
     desc: `Given the breadth of the field of health analytics, this course will provide an overview of the development and rapid expansion of analytics in healthcare, major and emerging topical areas, and current issues related to research methods to improve human health. We will cover such topics as security concerns unique to the field, research design strategies, and the integration of epidemiologic and quality improvement methodologies to operationalize data for continuous improvement. Students will be introduced to the application of predictive analytics to healthcare. Students will understand factors impacting the delivery of quality and safe patient care and the application of data-driven methods to improve care at the healthcare system level, design approaches to answering a research question at the population level, become familiar with the application of data analytics to impacting care at the provider level through Clinical Decision Systems, and understand the process of a Clinical Trail.`,
     topics: ["Machine Learning", "Python", "Deep Learning"],
@@ -169,6 +181,12 @@ const COURSES = [
     code: "ADSP 32018", name: `Next-Gen NLP: LLM and AgenticAI in Practice`, semester: "Spring Year 1", cat: "elective",
     desc: `Extracting actionable insights from unstructured text and designing cognitive applications remains crucial to applied data science. Students in this course will learn the foundations of natural language processing, including text preprocessing techniques such as text normalization, lemmatization, stemming, and regex. The course will cover supervised learning methods like text classification using n-grams, TF-IDF vectorization, and sentiment analysis, as well as unsupervised approaches like topic modeling (LDA, NMF, BERTopic) and paraphrase mining. Neural network-based NLP techniques will be introduced, covering distributional similarity, word embeddings (Word2Vec, FastText, GloVe), and deep learning architectures, including CNNs, LSTMs, GRUs, and transformer-based models such as BERT and ModernBERT. Students will explore question-answering systems, integrating extractive methods (SQuAD) and generative techniques (T5, BART). Advanced topics will include instruction-tuned large language models (ChatGPT, DeepSeek), reinforcement learning (RLHF, PPO), retrieval-augmented generation, and agentic AI. The course will provide hands-on experience in Python-based text analysis and practical applications using modern NLP frameworks, including transformer-based models and retrieval systems.`,
     topics: ["GenAI", "Natural Language Processing"],
+    prereqs: []
+  },
+  { 
+    code: "ADSP 32019", name: "Real-Time Intelligent Systems", semester: "Winter Year 1", cat: "elective",
+    desc: `Developing end-to-end automation and intelligent systems is now the most advanced area of application for analytics. Building such systems requires proficiency in programming, understanding of computer systems, as well as knowledge of related analytical methodologies, which are the skills that this course aims to teach to students. The course focuses on python and is tailored for students with basic programming knowledge in Python. The course is partially project based. During the first three sessions, we will review basic python concepts and then learn more advanced python and the ways to use Python to handle large data flows. The later sessions are project based and will focus on developing end-to-end analytical solutions in the following areas: Finance and trading, blockchains and crypto-currencies, image recognition, and video surveillance systems.`,
+    topics: [],
     prereqs: []
   },
   { 
@@ -188,6 +206,18 @@ const COURSES = [
     desc: `Computer vision is the field of computer science that focuses on creating digital systems that can process, analyze, and make sense of visual data in the same way that humans do. Deep learning is a subset of machine learning and a branch of Artificial Intelligence (AI). It involves the training, deployment, and application of large complex neural network architectures to solve cutting-edge problems. Deep Learning has become the primary approach for solving cognitive problems such as Computer Vision and Natural Language Processing (NLP) and has had a massive impact on various industries such as healthcare, retail, automotive, industrial automation, and agriculture. This course will enable students to build Deep Learning models and apply them to computer vision tasks such as object recognition, detection, and segmentation. Students will gain an in-depth understanding of the Deep Learning model development process, tools, and frameworks. Although the focus of the course will primarily be computer vision, students will work on both image and nonimage datasets during class exercises and assignments. Students will gain hands-on experience in popular libraries such as Tensorflow, Keras, and PyTorch. Students will also learn to apply state of the art models such as ResNet, EfficientNet, RCNNs, YOLO, Vision Transformers, etc. for computer vision and work on datasets such as CIFAR, ImageNet, MS COCO, and MPII Human Poses.`,
     topics: ["Computer Vision", "Deep Learning"],
     prereqs: ["ADSP 31008", "ADSP 31017"]
+  },
+  { 
+    code: "ADSP 32024", name: "Data Science for Algorithmic Marketing", semester: "Winter Year 1", cat: "elective",
+    desc: `This course focuses on marketing science methods and algorithms. The course will expose and immerse students in the marketing science algorithms. The course would cover algorithms for undertaking competitive analysis in the digital landscape, market segmentation, mining databases for effective digital marketing, design of new digital and traditional products, forecasting sales and product diffusion, real time product positioning, intra omni-channel optimization and inter omni-channel resource allocation, and pricing across both omni-channel marketing effectiveness and ROI. The course will use a combination of lecture, in-class discussions, group assignments, and a final group project. The course lays special emphasis on algorithms. Hence it draws heavily from the fields of optimization, machine-learning based recommendation systems, association rules, consumer choice models, Bayesian estimation, experimentation and analysis of covariance, advanced visualization techniques for mapping brand perceptions, and analysis of social media data using advanced NLP techniques.`,
+    topics: [],
+    prereqs: ["ADSP 31007", "ADSP 31014"]
+  },
+  { 
+    code: "ADSP 32025", name: "Supply Chain Optimization", semester: "Winter Year 1", cat: "elective",
+    desc: `"Big Data" continues to grow exponentially in our large-scale transactional world where 100,000s of SKUs and millions of customers are interacting with 1:1 offers that include differential pricing, shipping timing/costs and even made to order "custom" product configurations. These consumer behaviors are quickly advancing the availability of new data and techniques within the discipline of Data Science. This elective course will give students the opportunity to apply their skills in data visualization, data mining tools, predictive modeling, and advanced optimization techniques to address Supply Chain challenges. The course focuses on the use of Advanced Predictive Modeling, Machine Learning, AI and other Data Science insight and activation tools are to automate and optimize the performance of the Supply Chain. Students will also learn how to optimize the performance of the Supply Chain from the lens of multiple related disciplines including: Sales Forecasting, Warehousing/Inventory Management, Promotion, Pricing, Logistics Network Optimization, Freight Cost Management, Manufacturing, Retail POS Information, Ecommerce, Consumer Data, and Product Design/Packaging. After completing this course, you will be prepared to work in any of the numerous specialty areas possible in the world of Supply Chain Management.`,
+    topics: ["Big Data"],
+    prereqs: []
   },
   { 
     code: "ADSP 32026", name: "Python for ML Engineering", semester: "Spring Year 1", cat: "elective",
@@ -212,6 +242,12 @@ const COURSES = [
     desc: `The overarching goal of this course is to take students two steps closer to being "Complete Data Scientists". The first step is by letting students manage and solve a real data science project with real clients and real problems. Students will complete the design of their Capstone Projects, and begin the implementation. The second step is by exposing them to data science methodologies in the absence of pre-existing data - by exposing them to quantitative methodologies in optimally designing data collection tasks. This course covers the Business analytic process from the translation of business problems and opportunities into questions that can be addressed by using data science, development of analytical plans including methodologies and data to address these issues, and initial implementation of these analytical plan.`,
     topics: ["Data Ethics", "Business Analytics"],
     prereqs: []
+  },
+  { 
+    code: "ADSP 34003", name: "Capstone II", semester: "Winter Year 1", cat: "capstone",
+    desc: `The Capstone II class is designed to: 1) Provide students maximum flexibility in the latter stages of their Capstone project to work heavily with their Capstone advisors in concluding the execution of the analytic methodology and any client / sponsor deliverables for the project. 2) Provide maximum support to students in the curation and delivery of key project communications: a) Formal research paper. b) Formal business presentation of project details, value, findings and recommendations. c) Live presentation by the team in Capstone Showcase including question / answer session with a judging panel.`,
+    topics: ["Career"],
+    prereqs: ["ADSP 34002"]
   },
   { 
     code: "ADSP 37025", name: "MS in Applied Data Science Career Seminar I", semester: "Autumn Year 1", cat: "seminar",
