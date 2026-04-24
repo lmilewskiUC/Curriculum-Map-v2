@@ -300,7 +300,7 @@ function renderGrid() {
     visible.forEach(c => {
       const card = document.createElement('div');
       card.className = 'course-card';
-      card.style.setProperty('--cat-color', CATEGORIES[c.cat].color);
+      card.style.borderTop = `4px solid ${CATEGORIES[c.cat].color}`;
       
       card.innerHTML = `
         <div class="course-code">${c.code}</div>
